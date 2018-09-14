@@ -14,33 +14,35 @@
 <body>
 
     <div class="container">
-        <div class='card-panel purple darken-4 col s12 center-align'>
+        <div class='card-panel top col s12 center-align'>
             <div class="row">
-                <h4 class="survey white-text">Survey Questions</h4>
+                <h4 class="survey">Survey Questions</h4>
                 <div class="divider"></div>
             </div>
-            <div class='card-panel center white'>
+            <div class='card-panel center middle'>
                 <div class="row">
                     <h5 class="about">About You</h5>
                 </div>
                 <div class="row">
-                    <h6>Name (Required)</h6>
+                    <h5 class="left-align">Name (Required)</h5>
                     <div class="input-field col s12">
-                        <input placeholder="Name" id="name" type="text" class="validate" required>
+                        <input id="name" type="text" class="validate" required>
+                        <label for="name text-black">Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <h6>Link to Photo Image (Required)</h6>
+                    <h5 class="left-align">Link to Photo Image (Required)</h5>
                     <div class="input-field col s12">
-                        <input placeholder="Image Link" id="imglink" type="text" class="validate" required>
+                        <input id="imglink" type="text" class="validate" required>
+                        <label for="imglink">Image</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <h5 class="number">Question #1</h5>
                     <h6 class="question">You really love taking your dog for a long walk.</h6>
-                    <div class="input-field col s12">
-                        <select class="q1">
+                    <div class="input-field col l6 s12 offset-l3">
+                        <select class="browser-default q1">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
                             <option value="2">2</option>
@@ -53,7 +55,7 @@
                 <div class="row">
                     <h5 class="number">Question #2</h5>
                     <h6 class="question">You feel awkward in a crowd of people.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q2">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -67,7 +69,7 @@
                 <div class="row">
                     <h5 class="number">Question #3</h5>
                     <h6 class="question">You would eat a burger over a hotdog.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q3">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -81,7 +83,7 @@
                 <div class="row">
                     <h5 class="number">Question #4</h5>
                     <h6 class="question">You love the band black sabbath (ozzy only).</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q4">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -95,7 +97,7 @@
                 <div class="row">
                     <h5 class="number">Question #5</h5>
                     <h6 class="question">You love to watch movies.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q5">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -109,7 +111,7 @@
                 <div class="row">
                     <h5 class="number">Question #6</h5>
                     <h6 class="question">You take naps more then you should.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q6">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -123,7 +125,7 @@
                 <div class="row">
                     <h5 class="number">Question #7</h5>
                     <h6 class="question">Sometimes you want to break things.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q7">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -137,7 +139,7 @@
                 <div class="row">
                     <h5 class="number">Question #8</h5>
                     <h6 class="question">You love to sleep.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q8">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -151,7 +153,7 @@
                 <div class="row">
                     <h5 class="number">Question #9</h5>
                     <h6 class="question">You love to play video games.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q9">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -165,7 +167,7 @@
                 <div class="row">
                     <h5 class="number">Question #10</h5>
                     <h6 class="question">You really enjoy animal crackers.</h6>
-                    <div class="input-field col s12">
+                    <div class="input-field col l6 s12 offset-l3">
                         <select class="browser-default q10">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">1 (strongly disagree)</option>
@@ -175,8 +177,9 @@
                             <option value="5">5 (strongly agree)</option>
                         </select>
                     </div>
-                    <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1"
-                        id="submitBtn">Submit</button>
+                </div>
+                <div class="row">
+                    <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1 submit">Submit</button>
                 </div>
             </div>
         </div>
