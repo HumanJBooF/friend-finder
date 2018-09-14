@@ -1,4 +1,9 @@
+$(function () {
+    $('select').formSelect();
 
-$('.submit').on('click', () => {
-    console.log('working?')
-})
+
+
+
+
+
+});

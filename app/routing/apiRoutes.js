@@ -1,4 +1,12 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
+const friends = require('../data/friends.js');
+
+const routes = (app) => {
+
+    app.get('/api/friends', (req, res) => {
+        res.json(friends);
+    });
+
+}
+
+module.exports = routes;
 

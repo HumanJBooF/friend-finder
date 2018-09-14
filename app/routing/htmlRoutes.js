@@ -1,15 +1,15 @@
 const path = require('path');
 
-module.exports = (app) => {
-
-    app.use((req, res) => {
-        res.sendFile(path.join(__dirname, '/../public/home.html'))
-    })
-
+const routes = (app) => {
 
     app.get('/survey', (req, res) => {
         res.sendFile(path.join(__dirname, '/../public/survey.html'))
     });
 
+    app.use((req, res) => {
+        res.sendFile(path.join(__dirname, '/../public/home.html'))
+    });
 
 }
+
+module.exports = routes;
