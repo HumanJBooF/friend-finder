@@ -2,13 +2,19 @@ const path = require('path');
 
 const routes = (app) => {
 
-    app.get('/survey', (req, res) => {
-        res.sendFile(path.join(__dirname, '/../public/survey.html'))
-    });
+    app.get('/:route?', (req, res) => {
 
-    app.use((req, res) => {
-        res.sendFile(path.join(__dirname, '/../public/home.html'))
-    });
+        let URL = req.params.route;
+        switch (URL) {
+            case 'survey':
+                console.log(`case two!`);
+                return res.sendFile(path.join(__dirname, '/../public/survey.html'));
+                break;
+            default:
+                return res.sendFile(path.join(__dirname, '/../public/home.html'));
+                break;
+        }
+    })
 
 }
 

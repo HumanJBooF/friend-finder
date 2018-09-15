@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const htmlRoute = require('./app/routing/htmlRoutes.js');
+const apiRoutes = require('./app/routing/apiRoutes.js');
 
 const app = express();
 
@@ -14,8 +16,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 app.use(express.static(path.join(__dirname, 'app/public')));
 
-require('./app/routing/htmlRoutes.js')(app);
-// require('./app/routing/apiRoutes.js')(app);
+htmlRoute(app);
+apiRoutes(app);
 
 app.listen(PORT, () => {
     console.log(`LISTENING ${PORT}`);
