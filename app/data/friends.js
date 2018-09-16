@@ -1,8 +1,8 @@
-// DUMMY DATA FOR NOW TO TEST
+
 let friends = [
     {
-        "name": "Thaddius",
-        "photo": "",
+        "name": "Mark",
+        "photo": "https://fortunedotcom.files.wordpress.com/2018/07/gettyimages-961697338.jpg",
         "scores": [
             5,
             1,
@@ -13,12 +13,11 @@ let friends = [
             1,
             3,
             2,
-            5,
-            1
+            5
         ]
     }, {
-        "name": "Jamarcus",
-        "photo": "",
+        "name": "Steve",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/220px-Steve_Jobs_Headshot_2010-CROP2.jpg",
         "scores": [
             1,
             4,
@@ -29,88 +28,22 @@ let friends = [
             3,
             2,
             1,
-            1
-        ]
-    }, {
-        "name": "Edvard",
-        "photo": "",
-        "scores": [
-            3,
-            2,
-            4,
-            5,
-            1,
-            5,
-            5,
-            2,
-            1,
-            3,
             2
         ]
     }, {
-        "name": "Johntelle",
-        "photo": "",
+        "name": "Bill",
+        "photo": "https://pbs.twimg.com/profile_images/988775660163252226/XpgonN0X_400x400.jpg",
         "scores": [
             3,
-            5,
+            2,
             4,
+            5,
+            1,
+            5,
+            5,
             2,
             1,
-            1,
-            1,
-            5,
-            5,
-            4,
-            3
-        ]
-    }, {
-        "name": "Laquisha",
-        "photo": "",
-        "scores": [
-            5,
-            5,
-            5,
-            4,
             3,
-            2,
-            1,
-            5,
-            1,
-            2,
-            3
-        ]
-    }, {
-        "name": "Jacobina",
-        "photo": "",
-        "score": [
-            5,
-            5,
-            5,
-            4,
-            3,
-            5,
-            3,
-            5,
-            1,
-            3,
-            2,
-            1
-        ]
-    }, {
-        "name": "Jacob",
-        "photo": "",
-        "scores": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
         ]
     }
 ]

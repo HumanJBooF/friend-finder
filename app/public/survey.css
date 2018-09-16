@@ -1,8 +1,12 @@
-.top {
+.top, .submit {
     background-color: #6D9788 !important;
 }
 
-body {
+.submit {
+    color: #7E1C13 !important
+}
+
+body, html {
     font-family: 'Poppins', sans-serif !important;
     background-color: #7E1C13 !important;
     color: whitesmoke;
@@ -22,7 +26,11 @@ body {
     box-shadow: 0 1px 0 0 #000;
 }
 
-.browser-default {
-    color: #6D9788 !important;
+.input-field input[type=text]:focus+label {
+    color: rgb(255, 217, 0);
+}
+
+.browser-default, .browser-default>option {
+    color: #7E1C13 !important;
     font-weight: bolder;
 }
