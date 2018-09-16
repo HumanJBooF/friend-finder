@@ -1,15 +1,16 @@
-.top, .submit {
-    background-color: #6D9788 !important;
-}
-
-.submit {
-    color: #7E1C13 !important
-}
-
-body, html {
+body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #7E1C13 !important;
     color: whitesmoke;
+}
+
+.top, .submit, .card-content, .card-action {
+    background-color: #6D9788 !important;
+}
+
+.submit, .link {
+    color: #7E1C13 !important;
+    font-weight: bolder;
 }
 
 .middle {
@@ -33,4 +34,14 @@ body, html {
 .browser-default, .browser-default>option {
     color: #7E1C13 !important;
     font-weight: bolder;
+}
+
+.title {
+    color: black !important;
+    border-bottom: 1pt solid;
+}
+
+.friends, .friendImages {
+    display: table-caption !important;
+    color: black !important;
 }

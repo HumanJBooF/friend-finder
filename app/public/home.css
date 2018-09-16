@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #7E1C13 !important;
+    color: whitesmoke;
+}
+
+.horizontal {
+    background-color: #6D9788 !important;
+}
+
+.submit {
+    background-color: #7E1C13 !important;
+}
+
+.link {
+    color: #6D9788 !important;
+    font-weight: bolder;
+}

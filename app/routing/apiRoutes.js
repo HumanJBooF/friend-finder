@@ -22,7 +22,7 @@ const routes = (app) => {
                     let currentScore = parseInt(currentUser.scores[i]);
                     let difference = +otherScore - +currentScore;
                     totalDif += Math.abs(difference);
-                    console.log(totalDif);
+                    console.log(`these are the total diffs: ${totalDif}`);
                 }
 
                 differences.push(totalDif);
@@ -30,15 +30,15 @@ const routes = (app) => {
             // get the minimun difference
             let minDifference = Math.min.apply(null, differences);
             // empty array incase there is a tie, we can send more then one 'friend'
-            let bestMatch = [];
+            let bestMatches = [];
 
             for (let i = 0; i < differences.length; i++) {
                 if (differences[i] === minDifference) {
-                    bestMatch.push(friends[i]);
+                    bestMatches.push(friends[i]);
                 }
             }
-            console.log(bestMatch);
-            res.json(bestMatch);
+            console.log(bestMatches);
+            res.json(bestMatches);
             friends.push(currentUser);
         }
     })

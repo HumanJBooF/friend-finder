@@ -45,6 +45,21 @@ let friends = [
             1,
             3,
         ]
+    }, {
+        "name": "Tom",
+        "photo": "https://pbs.twimg.com/profile_images/834869747007234049/nFhOfRVo_400x400.jpg",
+        "scores": [
+            5,
+            3,
+            1,
+            1,
+            4,
+            3,
+            3,
+            2,
+            1,
+            5,
+        ]
     }
 ]
 
