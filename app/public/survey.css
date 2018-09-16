@@ -17,6 +17,11 @@ body {
     background-color: #7E1C13 !important;
 }
 
+input, .done {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
 .input-field label {
     color: whitesmoke;
     font-weight: bold;
@@ -44,4 +49,17 @@ body {
 .friends, .friendImages {
     display: table-caption !important;
     color: black !important;
+}
+
+.modal-footer, .modal-content {
+    background-color: #6D9788 !important;
+}
+
+.modal-error {
+    text-align: center !important;
+    border-bottom: 1pt solid;
+}
+
+.error {
+    text-align: center !important;
 }

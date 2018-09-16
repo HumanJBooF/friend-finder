@@ -8,15 +8,11 @@ $(function () {
             let checkValidation = true;
 
             $('.validate').each(function () {
-                if (!$(this).val()) {
-                    checkValidation = false;
-                }
+                if (!$(this).val()) checkValidation = false;
             });
 
             $('.browser-default').each(function () {
-                if (!$(this).val()) {
-                    checkValidation = false;
-                }
+                if (!$(this).val()) checkValidation = false;
             });
 
             return checkValidation;
@@ -57,7 +53,7 @@ $(function () {
                     });
 
                     data.forEach(element => {
-                        console.log(element)
+                        // console.log(element)
                         let $div = $(`<div class="friends">`);
                         let $div2 = $(`<div class="friendImages">`);
                         let name = element.name;
@@ -66,11 +62,12 @@ $(function () {
                         let photo = $(`<img class="circle" width="250px">`).attr('src', url);
                         $div.append(header);
                         $div2.append(photo);
-                        console.log($div, $div2, 'WHAT IS THIS')
+                        // console.log($div, $div2, 'IS IT WORKING');
                         $('.modal-content').append($div2, $div);
+
                     });
 
-                    let $title = $(`<h3 class="title">`)
+                    let $title = $(`<h3 class="title">`);
 
                     if (data.length > 1) {
                         $title.text('Your best matches');
@@ -87,9 +84,14 @@ $(function () {
 
 
         } else {
-            console.log('Fill out that form')
+            $('.modal-content').empty();
+            let $err = $(`<h4>You need to fill out the whole form!</h4>`);
+            let $errDiv = $(`<div class="modal-error">`).append($err);
+            $('.modal-content').append($errDiv);
+            let error = $(`<h3 class="error red-text text-accent-4">ERROR!</h3>`);
+            $('.modal-content').prepend(error);
+            console.log('Fill out that form');
         }
-
 
     });
 

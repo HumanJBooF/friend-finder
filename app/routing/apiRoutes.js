@@ -24,7 +24,7 @@ const routes = (app) => {
                     totalDif += Math.abs(difference);
                     console.log(`these are the total diffs: ${totalDif}`);
                 }
-
+                // salt-n-peppas here to ahhhh push-it
                 differences.push(totalDif);
             });
             // get the minimun difference

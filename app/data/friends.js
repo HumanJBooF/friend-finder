@@ -60,6 +60,21 @@ let friends = [
             1,
             5,
         ]
+    }, {
+        "name": "Gabe",
+        "photo": "https://www.wykop.pl/cdn/c3397993/link_PL4AmvwrA5bzw9XSuSxiwjwAuMq6fEy3,w300h223.jpg",
+        "scores": [
+            1,
+            4,
+            2,
+            2,
+            3,
+            2,
+            1,
+            5,
+            5,
+            3,
+        ]
     }
 ]
 
