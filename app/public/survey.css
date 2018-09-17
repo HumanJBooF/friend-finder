@@ -8,6 +8,10 @@ body {
     background-color: #6D9788 !important;
 }
 
+.name, .imgLink, .about {
+    font-weight: bolder;
+}
+
 .submit, .link {
     color: #7E1C13 !important;
     font-weight: bolder;

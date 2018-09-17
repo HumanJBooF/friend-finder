@@ -40,7 +40,7 @@ $(function () {
             })
 
             let currentURL = window.location.origin;
-            console.log(currentURL);
+            // console.log(currentURL);
 
             $.post(`${currentURL}/api/friends`, newUser, (data) => {
                 if (data) {
