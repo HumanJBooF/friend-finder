@@ -15,7 +15,8 @@ let friends = [
             2,
             5
         ]
-    }, {
+    },
+    {
         "name": "Steve",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/220px-Steve_Jobs_Headshot_2010-CROP2.jpg",
         "scores": [
