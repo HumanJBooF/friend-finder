@@ -13,6 +13,7 @@ const routes = (app) => {
         let differences = [];
         // if there is more then one friend
         if (friends.length > 1) {
+            console.log(friends.length)
             // loop through all friends
             friends.forEach(friend => {
                 let totalDif = 0;
@@ -39,10 +40,12 @@ const routes = (app) => {
             }
             console.log(bestMatches);
             res.json(bestMatches);
-            friends.push(currentUser);
+        } else {
+            res.json(friends);
         }
-    })
-}
+        friends.push(currentUser);
+    });
+};
 
 module.exports = routes;
 
