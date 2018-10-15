@@ -1,5 +1,9 @@
 $(function () {
 
+    const $div = $(`<div class="friends">`);
+    const $div2 = $(`<div class="friendImages">`);
+    const $title = $(`<h3 class="title">`);
+
     $('.submit').on('click', () => {
         event.preventDefault();
 
@@ -54,8 +58,6 @@ $(function () {
 
                     data.forEach(element => {
                         // console.log(element)
-                        let $div = $(`<div class="friends">`);
-                        let $div2 = $(`<div class="friendImages">`);
                         let name = element.name;
                         let url = element.photo;
                         let header = $(`<h4>`).text(name);
@@ -66,8 +68,6 @@ $(function () {
                         $('.modal-content').append($div2, $div);
 
                     });
-
-                    let $title = $(`<h3 class="title">`);
 
                     if (data.length > 1) {
                         $title.text('Your best matches');
