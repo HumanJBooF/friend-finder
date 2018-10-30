@@ -24,7 +24,7 @@ $(function () {
 
         if (validateForms()) {
             // object for the new user aka friend
-            let newUser = {
+            const newUser = {
                 name: $('#name').val().trim(),
                 photo: $('#imgLink').val().trim(),
             };
@@ -58,10 +58,10 @@ $(function () {
 
                     data.forEach(element => {
                         // console.log(element)
-                        let name = element.name;
-                        let url = element.photo;
-                        let header = $(`<h4>`).text(name);
-                        let photo = $(`<img class="circle" width="250px">`).attr('src', url);
+                        const name = element.name;
+                        const url = element.photo;
+                        const header = $(`<h4>`).text(name);
+                        const photo = $(`<img class="circle" width="250px">`).attr('src', url);
                         $div.append(header);
                         $div2.append(photo);
                         // console.log($div, $div2, 'IS IT WORKING');
@@ -85,10 +85,10 @@ $(function () {
 
         } else {
             $('.modal-content').empty();
-            let $err = $(`<h4>You need to fill out the whole form!</h4>`);
-            let $errDiv = $(`<div class="modal-error">`).append($err);
+            const $err = $(`<h4>You need to fill out the whole form!</h4>`);
+            const $errDiv = $(`<div class="modal-error">`).append($err);
             $('.modal-content').append($errDiv);
-            let error = $(`<h3 class="error red-text text-accent-4">ERROR!</h3>`);
+            const error = $(`<h3 class="error red-text text-accent-4">ERROR!</h3>`);
             $('.modal-content').prepend(error);
             console.log('Fill out that form');
         }
